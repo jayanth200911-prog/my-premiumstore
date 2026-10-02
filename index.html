@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My Store</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+    }
+
+    .hero {
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #111, #444);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 55px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: white;
+      color: #111;
+      padding: 14px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .products {
+      padding: 50px 7%;
+    }
+
+    .products h2 {
+      text-align: center;
+      margin-bottom: 35px;
+      font-size: 32px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .product {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .product-image {
+      height: 180px;
+      background: #eee;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+      font-size: 50px;
+    }
+
+    .product h3 {
+      margin-bottom: 8px;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      nav a {
+        margin-left: 10px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">MY STORE</div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Welcome to My Store</h1>
+
+      <p>
+        Discover products you'll love.
+      </p>
+
+      <a href="#products" class="btn">
+        Shop Now
+      </a>
+    </div>
+  </section>
+
+  <section class="products" id="products">
+
+    <h2>Featured Products</h2>
+
+    <div class="product-grid">
+
+      <div class="product">
+        <div class="product-image">👕</div>
+        <h3>Premium T-Shirt</h3>
+        <p>Comfortable everyday wear</p>
+        <div class="price">₹499</div>
+      </div>
+
+      <div class="product">
+        <div class="product-image">🎧</div>
+        <h3>Wireless Headphones</h3>
+        <p>Premium sound experience</p>
+        <div class="price">₹999</div>
+      </div>
+
+      <div class="product">
+        <div class="product-image">⌚</div>
+        <h3>Smart Watch</h3>
+        <p>Modern style and features</p>
+        <div class="price">₹1,499</div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer id="contact">
+    <p>© 2026 My Store. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
